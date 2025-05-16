@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>小兔子互动场景</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <video id="bunnyVideo" autoplay playsinline controls></video>
+  </div>
+  <div class="right">
+    <div class="prompt" id="bunnyResponse">小兔子来了，等一下要说出你的邀请哦~</div>
+    <button id="startSpeech" class="btn" style="display: none;">🗣️ 开始说话</button>
+  </div>
+</div>
+
+<!-- 通关成功页面 -->
+<div class="success-section" id="successSection">
+  <h1>🎉 太棒了，通关成功！</h1>
+  <div class="success-video-box">
+    <video id="successVideo" autoplay playsinline controls></video>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
